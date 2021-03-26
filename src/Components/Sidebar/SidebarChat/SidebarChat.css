@@ -1,0 +1,14 @@
+.sidebar__chat {
+    display : flex;
+    padding : 15px;
+    border-bottom : 1px solid rgb(240, 237, 237);
+    cursor: pointer;
+}
+
+.sidebar__chat:hover {
+    background-color: #ebebeb;
+}
+
+.chat__info{
+    margin-left : 15px;
+}
