@@ -1,0 +1,23 @@
+.login{
+    display: grid;
+    place-items: center;
+    background-color: #ededed;
+    height : 50vh;
+    width: 50vw;
+    box-shadow: -1px 5px 10px -6px rgba(0,0,0,0.75);
+}
+.login__container{
+    display: grid;
+    place-items: center;
+}
+.login__logo > img{
+    object-fit: contain;
+    height:100px;
+    margin-bottom: 40px;
+}
+.logo__container > button{
+    margin-top : 50px;
+    text-transform: inherit;
+    background-color: rgb(32, 150, 111);
+    border-radius: 12px;
+}

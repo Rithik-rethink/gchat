@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
+import React, { useState} from 'react';
 import './App.css';
 import SideBar from './Components/Sidebar/Sidebar.js';
 import Chat from "./Components/Sidebar/Chat/Chat.js";
+import Login from './Components/Login/Login.js';
+function App(){
+  const [user,setUser] = useState('rithik');
 
-class App extends Component {
-  render() {
-    return (
+  return (
       <div className="app">
-        <div className = 'main'>
+        {!user?<Login/>:
+          (<div className = 'main'>
           <SideBar/>
           <Chat/>
-        </div>
+          </div>)
+        }
       </div>
-    );
-  }
+  );
 }
 
 export default App;
